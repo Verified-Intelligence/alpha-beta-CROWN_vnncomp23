@@ -1,0 +1,29 @@
+name: Pylint check
+on: [push]
+jobs:
+  pylint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: 3.8
+          architecture: x64
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install pylint
+        run: |
+          pip install pylint
+      - name: Run pylint (enforced for selected files)
+        run: |
+          pylint --disable=R auto_LiRPA/bound_general.py
+          pylint --disable=R auto_LiRPA/optimized_bounds.py
+          pylint --disable=R auto_LiRPA/interval_bound.py
+          pylint --disable=R auto_LiRPA/linear_bound.py
+          pylint --disable=R auto_LiRPA/jacobian.py
+          pylint --disable=R complete_verifier/abcrown.py
+          pylint --disable=R complete_verifier/utils.py
+          pylint --disable=R complete_verifier/bab.py
+      - name: Run pylint (not enforced)
+        run: |
+          pylint --disable=R auto_LiRPA || true

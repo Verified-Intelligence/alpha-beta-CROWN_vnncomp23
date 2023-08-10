@@ -1,0 +1,11 @@
+general:
+  mode: verified-acc
+  root_path: ../../../../../vnncomp2021/benchmarks/verivital
+  csv_name: verivital_instances.csv
+  complete_verifier: mip
+data:
+  dataset: MNIST
+  start: 27
+  end: 28
+attack:
+  pgd_order: after

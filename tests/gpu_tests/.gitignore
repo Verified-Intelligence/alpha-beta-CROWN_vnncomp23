@@ -1,0 +1,4 @@
+*.npz
+*.tgz
+master_outputs
+out.txt

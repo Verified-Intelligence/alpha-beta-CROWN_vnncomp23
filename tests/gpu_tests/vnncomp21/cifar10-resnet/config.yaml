@@ -1,0 +1,12 @@
+general:
+  root_path: ../../vnncomp2021/benchmarks/cifar10_resnet
+  csv_name: cifar10_resnet_instances.csv
+solver:
+  batch_size: 2000
+  beta-crown:
+    lr_beta: 0.01
+attack:
+  pgd_order: skip
+bab:
+  branching:
+    reduceop: max

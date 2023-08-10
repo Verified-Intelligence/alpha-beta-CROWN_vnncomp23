@@ -1,0 +1,9 @@
+tests:
+  - idx: 7
+  - idx: 18
+  - idx: 83
+    args: --batch_size 3072 --timeout 600
+  - idx: 48
+    args: --pgd_order skip
+  - idx: 164
+    args: --pgd_order skip

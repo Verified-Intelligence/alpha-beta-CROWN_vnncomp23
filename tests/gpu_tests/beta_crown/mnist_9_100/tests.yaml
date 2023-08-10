@@ -1,0 +1,9 @@
+tests:
+  - idx: 53
+  - idx: 553
+    args: --timeout 1080
+  - idx: 1
+  - idx: 47
+    args: --pgd_order skip
+  - idx: 759
+    args: --pgd_order skip

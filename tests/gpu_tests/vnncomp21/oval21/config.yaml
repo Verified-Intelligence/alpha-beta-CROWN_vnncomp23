@@ -1,0 +1,11 @@
+general:
+  root_path: ../../vnncomp2021/benchmarks/oval21
+  csv_name: oval21_instances.csv
+solver:
+  batch_size: 200
+  beta-crown:
+    lr_beta: 0.01
+bab:
+  branching:
+    reduceop: max
+    candidates: 10

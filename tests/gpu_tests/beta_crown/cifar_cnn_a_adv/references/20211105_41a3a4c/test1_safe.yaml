@@ -1,0 +1,21 @@
+general:
+  mode: verified-acc
+model:
+  name: cnn_4layer_adv
+  path: cifar_cnn_a_adv.model
+data:
+  dataset: CIFAR_SDP
+  start: 11
+  end: 12
+specification:
+  epsilon: 0.00784313725  # 2./255.
+attack:
+  pgd_restarts: 50
+solver:
+  batch_size: 4096
+  beta-crown:
+    iteration: 20
+bab:
+  timeout: 30
+  branching:
+    reduceop: max

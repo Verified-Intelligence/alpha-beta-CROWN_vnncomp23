@@ -1,0 +1,20 @@
+# Requires a lot of branch and bound.
+general:
+  mode: verified-acc
+model:
+  name: cifar_conv_big
+  path: cifar_conv_big_pgd.pth
+data:
+  dataset: CIFAR_ERAN
+  start: 799
+  end: 800
+specification:
+  epsilon: 0.00784313725  # 2./255.
+attack:
+  pgd_restarts: 100
+solver:
+  batch_size: 64
+  beta-crown:
+    iteration: 20
+bab:
+  timeout: 180

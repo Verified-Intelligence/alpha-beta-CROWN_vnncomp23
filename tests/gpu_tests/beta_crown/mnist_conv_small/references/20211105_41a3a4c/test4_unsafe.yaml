@@ -1,0 +1,22 @@
+general:
+  mode: verified-acc
+model:
+  name: mnist_conv_small
+  path: mnist_conv_small_nat.pth
+data:
+  dataset: MNIST_ERAN
+  start: 225
+  end: 226
+specification:
+  epsilon: 0.12
+attack:
+  pgd_restarts: 100
+  pgd_order: skip
+solver:
+  batch_size: 2048
+  beta-crown:
+    iteration: 20
+bab:
+  timeout: 180
+  branching:
+    reduceop: max

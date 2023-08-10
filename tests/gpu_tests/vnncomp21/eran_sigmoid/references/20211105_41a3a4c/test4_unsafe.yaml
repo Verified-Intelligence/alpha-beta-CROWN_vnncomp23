@@ -1,0 +1,8 @@
+general:
+  mode: verified-acc
+  root_path: ../../../../../vnncomp2021/benchmarks/eran
+  csv_name: eran_instances.csv
+data:
+  dataset: MNIST
+  start: 54
+  end: 55

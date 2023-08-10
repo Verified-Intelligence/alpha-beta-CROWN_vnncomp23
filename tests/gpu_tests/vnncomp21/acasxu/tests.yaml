@@ -1,0 +1,15 @@
+tests:
+  - idx: 26
+  - idx: 73
+  - idx: 65
+    args: --batch_size 500 --input_split_enhanced_pgd_restarts 10000 --timeout_scale 1.2
+  - idx: 118
+  - idx: 96
+  - idx: 135
+  - idx: 143
+  - idx: 180
+  - idx: 181
+  - idx: 182
+  - idx: 183
+  - idx: 184
+  - idx: 185

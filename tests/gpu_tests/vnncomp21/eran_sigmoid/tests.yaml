@@ -1,0 +1,8 @@
+tests:
+  - idx: 37
+  - idx: 38
+  - idx: 59
+    args: --early_stop_patience 100
+  - idx: 54
+    args: --pgd_order skip --init_iteration 200
+  - idx: 54

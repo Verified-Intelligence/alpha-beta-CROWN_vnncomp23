@@ -1,0 +1,4 @@
+tests:
+  - idx: 75
+  - idx: 90
+    env: PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:32

@@ -1,0 +1,8 @@
+tests:
+  - idx: 7
+  - idx: 18
+  - idx: 19
+  - idx: 194
+    args: --pgd_order skip
+  - idx: 92
+    args: --pgd_order skip

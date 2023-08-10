@@ -1,0 +1,6 @@
+general:
+  root_path: ../../vnncomp2021/benchmarks/verivital
+  csv_name: verivital_instances.csv
+  complete_verifier: mip
+attack:
+  pgd_order: after

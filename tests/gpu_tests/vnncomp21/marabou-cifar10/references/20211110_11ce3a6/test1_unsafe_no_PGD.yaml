@@ -1,0 +1,18 @@
+general:
+  mode: verified-acc
+  root_path: ../../../../../vnncomp2021/benchmarks/marabou-cifar10
+  csv_name: marabou-cifar10_instances.csv
+data:
+  dataset: CIFAR
+  start: 2
+  end: 3
+bab:
+  branching:
+    candidates: 5
+solver:
+  beta-crown:
+    iteration: 50
+    lr_beta: 0.5
+    batch_size: 1000
+attack:
+  pgd_order: skip

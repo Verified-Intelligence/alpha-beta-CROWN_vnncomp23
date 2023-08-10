@@ -1,0 +1,4 @@
+tests:
+  # Modified vnnlib by ChristopherBrix
+  - idx: 0
+    args: --precompile_jit --onnx_path ../../vnncomp2022_benchmarks/benchmarks/mnist_fc/onnx/mnist-net_256x6.onnx --vnnlib_path ./prop_1_0.05_singleLabel_modified.vnnlib --timeout 20.0

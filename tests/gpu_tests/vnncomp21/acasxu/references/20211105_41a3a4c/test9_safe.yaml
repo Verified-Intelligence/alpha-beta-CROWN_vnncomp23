@@ -1,0 +1,17 @@
+general:
+  root_path: ../../../../../vnn-comp/vnncomp2021/benchmarks/acasxu
+  csv_name: acasxu_instances.csv
+data:
+  dataset: ACASXU
+  start: 181
+  end: 182
+solver:
+  beta-crown:
+    batch_size: 1000
+    iteration: 10
+  alpha-crown:
+    share_alphas: True
+bab:
+  branching:
+    method: sb
+    candidates: 3

@@ -1,0 +1,10 @@
+tests:
+  - idx: 3
+    args: --pgd_order skip --timeout_scale 0.25
+  - idx: 7
+    args: --pgd_order skip --timeout_scale 0.25
+  - idx: 16
+    args: --pgd_order skip --timeout_scale 0.25
+  - idx: 2
+  - idx: 13
+  - idx: 23 

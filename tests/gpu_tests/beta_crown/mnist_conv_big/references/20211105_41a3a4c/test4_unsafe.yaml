@@ -1,0 +1,22 @@
+general:
+  mode: verified-acc
+model:
+  name: mnist_conv_big
+  path: mnist_conv_big_diffai.pth
+data:
+  dataset: MNIST_ERAN
+  start: 133
+  end: 134
+specification:
+  epsilon: 0.3
+attack:
+  pgd_restarts: 100
+  pgd_order: skip
+solver:
+  batch_size: 256
+  beta-crown:
+    iteration: 20
+bab:
+  timeout: 180
+  branching:
+    reduceop: max

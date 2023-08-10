@@ -1,0 +1,8 @@
+general:
+  mode: verified-acc
+  root_path: ../../../../../vnncomp2021/benchmarks/nn4sys
+  csv_name: nn4sys_instances.csv
+data:
+  dataset: NN4SYS
+  start: 2
+  end: 3

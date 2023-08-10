@@ -1,0 +1,9 @@
+tests:
+  - idx: 799
+    args: --timeout_scale 2.0  # Allow more time, as timeout can happen when others are using the same server
+  - idx: 580
+  - idx: 187
+  - idx: 444
+    args: --pgd_order skip
+  - idx: 684
+    args: --pgd_order skip
